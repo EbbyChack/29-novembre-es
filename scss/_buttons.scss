@@ -1,0 +1,32 @@
+#buttons {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  @mixin button {
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    border: none;
+    transition: transform 0.6s ease-in;
+  }
+  #btn1 {
+    @include button();
+    background: #0e6cff;
+  }
+  #btn2 {
+    @include button();
+    background: #ff8700;
+  }
+  #btn3 {
+    @include button();
+    background: #4caf50;
+  }
+
+  .btn:hover {
+    transform: scale(1.3);
+  }
+}
